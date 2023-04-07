@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project first</title>
+    <style>
+        body {
+            background-color: #f3eae3;
+        }
+
+        .whole {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p {
+            color: gray;
+            width: 200px;
+        }
+
+        .h1 {
+            font-size: 25px;
+            width: 150px;
+            font-weight: 900;
+        }
+
+        .pricewrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
+
+        .first {
+            color: #3d8168;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .second {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .paragraph-section {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 25px;
+            background-color: white;
+            height: 391px;
+            width: 254px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 2.5px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .image-section img {
+            height: 389px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        button {
+            width: 100%;
+            font-size: 15px;
+            font-weight: 900;
+            height: 40px;
+            border-radius: 5px;
+            color: white;
+            background-color: #3d8168;
+            border: none;
+        }
+
+        .image-section2 img {
+            display: none;
+        }
+
+        @media screen and (max-width:368px) {
+            .whole {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                margin: 0;
+            }
+
+            .paragraph-section {
+                width: 284px;
+                border-radius: 0;
+            }
+
+            .image-section img {
+                display: none;
+            }
+
+            .p {
+                margin-top: 10px;
+                color: gray;
+                width: auto;
+            }
+
+            .h1 {
+                font-size: 30px;
+                width: auto;
+                font-weight: 900;
+            }
+
+            .image-section2 img {
+                display: block;
+                width: 284px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="image-section"><img
+                src="Frontend Mentor _ Product preview card component coding challenge - Google Chrome 07-04-2023 13_34_02.png"
+                alt=""></div>
+        <div class="image-section2"><img
+                src="Frontend Mentor _ Product preview card component coding challenge - Google Chrome 07-04-2023 13_34_03.png"
+                alt=""></div>
+        <div class="paragraph-section">
+            <span class="p">PERFUME</span>
+            <span class="h1">Gabrielle Essence Eau De Parfum</span>
+            <span class="p">A floral ,solar and voluptous interpretation composed by olivier polge,perfumer-creater for
+                the House of CHANEL </span>
+            <span class="pricewrapper">
+                <span class="first">$149.99</span>
+                <span class="second">$169.99</span>
+            </span>
+            <span class="button"><button><img src="icons8-shopping-cart-24.png" width="19px" alt=""
+                        style="vertical-align: top;">Add to cart</button></span>
+        </div>
+    </div>
+</body>
+
+</html>

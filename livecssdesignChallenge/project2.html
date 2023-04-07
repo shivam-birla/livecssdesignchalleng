@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2 QR</title>
+    <style>
+        body {
+            background-color: #d5e1ef;
+        }
+        .whole {
+            margin: auto;
+            margin-top: 200px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid white;
+            justify-content: center;
+            align-items: center;
+            max-width: 320px;
+            background-color: white;
+            border-radius: 15px;
+        }
+        .paragraph-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p {
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+        }
+        .p p {
+            font-size: 25px;
+            font-weight: 900;
+            margin-top: 15px;
+        }
+        .second-p {
+            color: gray;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        @media screen and (max-width:368px){
+            p {
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            margin: 15px;
+        }
+        .image-section img{
+            width: 280px;
+        }
+        .whole{
+            margin: 0;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="image-section"><img
+                src="Frontend Mentor _ QR code component coding challenge - Google Chrome 07-04-2023 19_01_27.png"
+                width="300px" alt=""></div>
+
+        <div class="paragraph-section">
+            <div class="p">
+                <p>Improve your front-end
+                    skills by building projects </p>
+            </div>
+            <div class="second-p">
+                <p>Scan the QR to visit Frontend <br> Mentor and take your coding skills to the next level </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
